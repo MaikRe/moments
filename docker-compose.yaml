@@ -6,6 +6,7 @@ services:
     volumes:
       - ./storage:/moments/storage
       - ./cache:/moments/cache
-    command: moments --secret YOUR_SECRET_GOES_HERE
+      - ./frontend:/moments/frontend
+    command: moments --secret rohow2025
     ports:
       - "3000:3000"

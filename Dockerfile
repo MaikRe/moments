@@ -10,6 +10,6 @@ FROM debian:bookworm-slim
 
 COPY --from=builder /usr/local/cargo/bin/moments /usr/local/bin/moments
 WORKDIR /moments
-COPY ./frontend/ ./frontend/
+# COPY ./frontend/ ./frontend/
 
 CMD ["moments"]
